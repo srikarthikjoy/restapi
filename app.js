@@ -29,7 +29,7 @@ app.use(function (req, res, next) {
   } else {
     if (
       urlExclude.includes(req.path) &&
-      (req.method === "PUT" || req.method === "DELETE")
+      (req.method === "PUT" || req.method === "POST")
     ) {
       next();
     } else {
